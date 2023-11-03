@@ -47,4 +47,18 @@
   someText($text);
   echo $text."<br>"; // Hello this is string and some extra text
 
+  // variable function 
+
+  function greeting(){
+    echo "Welcome to my PHP code <br>";
+  }
+  $greet = "greeting";
+  $greet(); // Welcome to my PHP code
+
+  // Anonymous function
+  $anonymousFunction = function($name){
+    echo "Hello $name !<br>";
+  };
+  $anonymousFunction("Lakshman"); // Hello Lakshman !
+
 ?>
