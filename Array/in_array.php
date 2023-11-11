@@ -2,10 +2,13 @@
 
     // in_array() function :- Search for an element in an array and return 1(true) if found, nothing (false) otherwise.
 
-    $superHeros = array('Spiderman', 'Ironman', 'Thor', 'Hulk', 'Dr. Strange');
+    $superHeros = array('Spiderman', 'Ironman', 'Thor', 'Hulk', '128');
 
     echo in_array('Spiderman', $superHeros)."<br>"; // 1
     echo in_array('batman', $superHeros)."<br>"; // nothing 
+
+    echo in_array(128, $superHeros)."<br>"; // 1
+    echo in_array(128, $superHeros, true)."<br>"; // nothing
 
     if(in_array('Ironman', $superHeros)){
         echo "Ironman is present in the array.<br>";
