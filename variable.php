@@ -25,12 +25,17 @@
     /***************** Constant variable ****************/
     // syntax - define("var_name", value, boolean_value)
 
-    define('num1',62); // by default boolean value become false and num1 work as case sensitive. 
-    echo '<br>'. num1; // no need to dollar sign
-    # echo '<br>'. Num1; // give error
+    define('NUM1',62); // by default boolean value become false and num1 work as case sensitive. 
+    echo '<br>'. NUM1; // no need to dollar sign
+    # echo '<br>'. num11; // give error
 
-    define('num2', 135 , true);
-    echo '<br>'. num2;
-    // echo '<br>'. Num2;
-    // echo '<br>'. NUM2;
+    #define('NUM2', 135 , true);// It is not supported
+    #echo '<br>'. NUM2;
+    // echo '<br>'. num2;
+
+    // other syntax - const VARIABLE_NAME = value;
+
+    const NUM3 = 123;
+    echo '<br>'. NUM3;
+
 ?>
