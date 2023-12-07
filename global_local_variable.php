@@ -2,7 +2,7 @@
 
   $name = "Lakshman"; // global variable
   function myName(){
-    // echo "my name is $name"; // error -> can't directly access global variable inside any function.
+    echo "my name is ".$GLOBALS["name"]."<br>"; // error -> can't directly access global variable inside any functionbut can access using global keyword or $GLOBALS.
     $course = "BCA"; // local variable
   }
   myName();
